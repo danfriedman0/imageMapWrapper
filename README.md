@@ -31,7 +31,7 @@ $.fn.imageMapWrapper.defaults = {
 }
 ```
 
-If you want your highlight color to be BlueViolet, with border of BurlyWood, you can pass in these settings when you initialize the plugin:
+If you want your highlight color to be BlueViolet, with a border of BurlyWood, just pass in the settings when you initialize the plugin:
 
 ```javascript
 $('img[usemap]').imageMapWrapper({
