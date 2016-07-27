@@ -6,9 +6,11 @@ imageMapWrapper is a JQuery plugin that makes HTML image maps responsive and hig
 
 Include JQuery in your project and initialize the plugin:
 
-```$(document).ready(function() {
+```javascript
+$(document).ready(function() {
 	$('img[usemap]').imageMapWrapper();
-});``` 
+});
+``` 
 
 
 ### Settings
@@ -17,7 +19,8 @@ Include JQuery in your project and initialize the plugin:
 
 imageMapWrapper currently supports the following settings:
 
-```$.fn.imageMapWrapper.defaults = {
+```javascript
+$.fn.imageMapWrapper.defaults = {
 	fillColor: "#fff",
 	fillOpacity: .7,
 	border: false,
@@ -25,31 +28,40 @@ imageMapWrapper currently supports the following settings:
 	borderColor: "#f00",
 	borderOpacity: 1,
 	useAreaSettings: false
-}```
+}
+```
 
 If you want your highlight color to be BlueViolet, with border of BurlyWood, you can pass in these settings when you initialize the plugin:
 
-```$('img[usemap]').imageMapWrapper({
+```javascript
+$('img[usemap]').imageMapWrapper({
 	fillColor: "BlueViolet",
 	fillOpacity: 1,
 	border: true,
 	borderColor: "BurlyWood"
-});```
+});
+```
 
 Alternately, you can overwrite the defaults before you initialize the plugin.
 
-```$.fn.imageMapWrapper.defaults.fillColor = "MistyRose";
+```javascript
+$.fn.imageMapWrapper.defaults.fillColor = "MistyRose";
 $('img[usemap]').imageMapWrapper();
+```
 
 #### Area settings
 
 You can also specify custom settings for individual map areas by setting useAreaSettings to true.
 
-```$('img[usemap]').imageMapWrapper({useAreaSettings: true});
+```javascript
+$('img[usemap]').imageMapWrapper({useAreaSettings: true});
+```
 
 When useAreaSettings is true, imageMapWrapper will look for settings in the data-settings field of each area. For example:
 
-```<area shape="circle" data-settings="{'fillColor': 'Thistle', 'fillOpacity': '1'}" coords="125, 109, 71" alt="circle" href="#" />```
+```html
+<area shape="circle" data-settings="{'fillColor': 'Thistle', 'fillOpacity': '1'}" coords="125, 109, 71" alt="circle" href="#" />
+```
 
 You can overwrite any of the global settings in the data-settings field (except for useAreaSettings, which obviously wouldn't make any sense). The settings should be written in JSON format.
 
