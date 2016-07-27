@@ -1,0 +1,30 @@
+{
+  "name": "image-map-wrapper",
+  "version": "1.0.0",
+  "description": "Responsive JQuery plugin to let you highlight and resize HTML image maps",
+  "main": "js/imageMapWrapper.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danfriedman0/imageMapWrapper.git"
+  },
+  "keywords": [
+    "imagemap",
+    "image",
+    "map",
+    "responsive",
+    "resize",
+    "highlight",
+    "hilight",
+    "RWD",
+    "jquery-plugin"
+  ],
+  "author": "Dan Friedman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danfriedman0/imageMapWrapper/issues"
+  },
+  "homepage": "https://github.com/danfriedman0/imageMapWrapper#readme"
+}
