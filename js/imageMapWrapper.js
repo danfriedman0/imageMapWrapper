@@ -77,7 +77,7 @@
 		// The imw-wrapper is already responsive, so set the canvas dimensions
 		// to match the wrapper's dimensions
 		$('.imw-canvas').each(function() {
-			var wrapper = this.closest('.imw-wrapper');
+			var wrapper = $(this).closest('.imw-wrapper')[0];
 
 			var width = wrapper.getBoundingClientRect().width;
 			var height = wrapper.getBoundingClientRect().height;
