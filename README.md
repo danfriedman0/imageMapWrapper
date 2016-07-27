@@ -67,10 +67,4 @@ You can overwrite any of the global settings in the data-settings field (except 
 
 ### Other functions
 
-imageMapWrapper exposes the `$.fn.imageMapWrapper.resize()` function so you can resize the image map in code.
-
-```javascript
-$('img[usemap]').imageMapWrapper.resize();
-```
-
-Normally imageMapWrapper takes care of all resizing, but you might need to use the resize function if your image map is hidden in a popup, for example. In that case, you would want to call `$.fn.imageMapWrapper.resize()` right after the image map is revealed.
+imageMapWrapper exposes the `$.fn.imageMapWrapper.resize()` function so you can resize the image map in code. Normally imageMapWrapper takes care of all resizing, but you might need to use the resize function if your image map is hidden in a popup, for example. In that case, you would want to call `$.fn.imageMapWrapper.resize()` right after the image map is revealed. Right now, calling `resize()` resizes all wrapped image maps on the page.
