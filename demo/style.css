@@ -1,0 +1,22 @@
+/**
+ * imageMapWrapper demo stylesheet
+ */
+
+body {
+	font-family: 'Mada', sans-serif;
+	text-align: center;
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+	text-align: center;
+}
+
+p {
+	text-align: left;
+}
+
+#shapes {
+	margin: 0 auto;
+}
